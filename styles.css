@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url(assets/images/bg.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 95vh;
+  position: relative;
+}
+
+.main .box {
+  height: 95vh;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+.main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+  margin: auto;
+  height: 82px;
+  gap: 12px;
+}
+
+.main nav img {
+  color: red;
+  width: 144px;
+  position: relative;
+  z-index: 5;
+}
+
+.main nav button {
+  position: relative;
+  z-index: 10;
+  border: none;
+  background-color: red;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.bottom-text {
+  height: calc(100% - 82px);
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  font-family: "Martel Sans", sans-serif;
+  padding: 0 33px;
+}
+
+.bottom-text span:nth-child(1) {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.bottom-text span:nth-child(2) {
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bottom-text span:nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.email input {
+  border: 1px solid lightgray;
+  background: transparent;
+  padding: 15px 0;
+  padding-right: 165px;
+  padding-left: 14px;
+  font-size: 13px;
+  color: white;
+}
+
+.email input::placeholder {
+  color: rgb(161, 155, 155);
+  font-weight: 600;
+  /* letter-spacing: 0.89; */
+}
+
+.email button {
+  border: none;
+  background-color: red;
+  padding: 8px 19px;
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.saperation {
+  height: 7px;
+  background-color: rgb(131, 127, 127);
+  opacity: 0.33;
+}
+
+/*SECTIONS*/
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75vw;
+  margin: auto;
+}
+
+.first .text {
+  color: white;
+}
+
+.first .secImg {
+  position: relative;
+}
+
+.first .secImg img {
+  width: 40vw;
+  position: relative;
+  z-index: 10;
+  margin-top: 12px;
+}
+
+.first .secImg video {
+  position: absolute;
+  top: 61px;
+  right: 0px;
+  width: 35vw;
+}
+
+.first .text span:nth-child(1) {
+  font-size: 48px;
+  font-weight: 700;
+  display: block;
+}
+
+.first .text span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+}
+
+/*SECOND SECTION*/
+
+.second .text span:nth-child(1) {
+  line-height: 52px;
+}
+
+/*THIRD*/
+.third {
+  min-height: 55vh;
+  max-width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.third .text {
+  color: white;
+  max-width: 34vw;
+}
+.third .text span:nth-child(1) {
+  font-size: 48px;
+  font-weight: 700;
+  display: block;
+}
+
+.third .text span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+}
+
+/*FAQ*/
+.faq{
+  padding-bottom: 54px;
+}
+.faq h1 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  margin-top: 49px;
+  margin-bottom: 18px;
+}
+
+.faq .item-boxes{
+  padding-right: 69px;
+  padding-left: 177px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq .box {
+  color: white;
+  display: flex;
+  transition: all .7s ease-out;
+  background-color: rgb(45,45,45);
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 17px;
+  font-size: 23px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq .box:hover{
+  background-color: #414141;
+}
+
+/*Down email*/
+
+.downEmail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+  gap: 15px;
+}
+
+.downEmail .readyEmail{
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+footer{
+  min-height: 45vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  width: 80%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.fr-item ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fr-item ul li a{
+  color: white;
+  text-decoration: underline;
+}
